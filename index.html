@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Image Dynamically</title>
+    <script>
+        function addImage() {
+            
+            var img = document.createElement("img");
+
+            
+            img.src = "https://img.freepik.com/free-photo/beautiful-blooming-flowers-spring-season_23-2150790288.jpg?size=626&ext=jpg&ga=GA1.1.1183009345.1693479235&semt=ais_hybrid"
+            
+            img.alt = "Dynamically Added Image"; 
+
+            
+            img.width = 300; 
+            img.height = 300; 
+
+            
+            document.body.appendChild(img);
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Click the button to add an image</h2>
+    <button onclick="addImage()">Add Image</button>
+
+</body>
+</html>
